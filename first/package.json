@@ -13,7 +13,6 @@
     "lint": "eslint . --ext '.js,.jsx' --fix",
     "prettier": "prettier src/**/*.scss --write"
   },
-  "readmeFilename": "README.md",
   "tnpm": {
     "mode": "npminstall"
   },
@@ -60,5 +59,8 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.9"
-  }
+  },
+  "main": "webpack.config.js",
+  "author": "",
+  "license": "ISC"
 }

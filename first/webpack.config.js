@@ -3,10 +3,12 @@ const path = require('path');
 
 module.exports = (env, argv) => {
   const config = {
+    mode: 'development',
     entry: {
       'pages/help/index':  './src/pages/help/index.jsx',
       'pages/index/index':  './src/pages/index/index.jsx',
       'pages/simple/index':  './src/pages/simple/index.jsx',
+      'pages/form/index':  './src/pages/form/index.jsx',
     },
     output: {
       path: path.resolve('build'),
@@ -23,10 +25,10 @@ module.exports = (env, argv) => {
     resolve: {
       extensions: ['.js', '.jsx'],
       // TODO 演示 路径 alias
-      // alias: {
-      //   components: path.join(__dirname, 'src/components'),
-      //   utils: path.join(__dirname, 'src/utils'),
-      // },
+      alias: {
+        components: path.join(__dirname, 'src/components'),
+        utils: path.join(__dirname, 'src/utils'),
+      },
     },
     module: {
       rules: [
